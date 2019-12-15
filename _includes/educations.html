@@ -1,6 +1,6 @@
 {% assign education = site.data.data.education %}
 {% if education %}
-<section class="section publications-section">
+<section class="section educations-section">
 
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
@@ -12,9 +12,9 @@
   
   {% for graduation in education.graduations %}
   <div class="item">
-    <li>{{ graduation.degree }}</li>
-    <div class="publication-authors">{{ graduation.time }}</div>
-    <div class="publication-conference">{{ graduation.university }}</div>
+    <li class="education-degree">{{ graduation.degree }}</li>
+    <div class="education-time">{{ graduation.time }}</div>
+    <div class="education-university">{{ graduation.university }}</div>
   </div><!--//item-->
   {% endfor %}
 

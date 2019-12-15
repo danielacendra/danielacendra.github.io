@@ -3,9 +3,7 @@
 #
 
 sidebar:
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
-
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
     # Profile information
     name: Daniela Cendra
     tagline: Full Stack Developer
@@ -71,6 +69,15 @@ skills:
       - name: Angular
         level: 98%
 
+      - name: HTML5 & CSS
+        level: 95%
+
+      - name: Ruby on Rails
+        level: 85%
+
+      - name: Sketch & Photoshop
+        level: 60%
+      
       - name: HTML5 & CSS
         level: 95%
 

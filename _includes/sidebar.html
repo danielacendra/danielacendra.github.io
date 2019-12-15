@@ -1,4 +1,9 @@
 {% assign sidebar = site.data.data.sidebar %}
+<!-- {% assign age = Time.now().strftime('%Y').to_i - 1994 %}
+{% if Time.now().strftime(%m).to_i < 6 %}
+  {% assign age = age -1 %}
+{% endif %} -->
+
 <div class="sidebar-wrapper">
 
   <div class="profile-container">
@@ -8,7 +13,7 @@
     {% endif %}
 
     {% if sidebar.name %}
-    <h1 class="name">{{ sidebar.name }}</h1>
+    <h2 class="name">{{ sidebar.name }}</h2>
     {% endif %}
 
     {% if sidebar.tagline %}
@@ -16,14 +21,12 @@
     {% endif %}
 
   </div><!--//profile-container-->
-
   {% include contact.html %}
-
   {% include language.html %}
   {% include interests.html %}
 
-  {% if sidebar.about %}
+  <!-- {% if sidebar.about %}
     {% include about.html %}
-  {% endif %}
+  {% endif %} -->
 
 </div><!--//sidebar-wrapper-->
